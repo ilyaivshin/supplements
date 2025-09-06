@@ -149,14 +149,84 @@ const supplementsData = {
 // Текущая выбранная категория
 let currentCategory = 'all';
 
+// Переменные для карусели
+let currentSlideIndex = 0;
+let slideInterval;
+
 // Инициализация приложения
 document.addEventListener('DOMContentLoaded', function() {
     initializeApp();
+    initializeCarousel();
 });
 
 function initializeApp() {
     setupNavigation();
     displayProducts();
+}
+
+// Инициализация карусели
+function initializeCarousel() {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    // Автоматическая прокрутка каждые 4 секунды
+    slideInterval = setInterval(() => {
+        changeSlide(1);
+    }, 4000);
+    
+    // Останавливаем автопрокрутку при наведении
+    const carousel = document.querySelector('.carousel-container');
+    carousel.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+    });
+    
+    // Возобновляем автопрокрутку при убирании мыши
+    carousel.addEventListener('mouseleave', () => {
+        slideInterval = setInterval(() => {
+            changeSlide(1);
+        }, 4000);
+    });
+}
+
+// Смена слайда
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    // Убираем активный класс с текущего слайда
+    slides[currentSlideIndex].classList.remove('active');
+    indicators[currentSlideIndex].classList.remove('active');
+    
+    // Вычисляем новый индекс
+    currentSlideIndex += direction;
+    
+    // Зацикливаем слайды
+    if (currentSlideIndex >= slides.length) {
+        currentSlideIndex = 0;
+    } else if (currentSlideIndex < 0) {
+        currentSlideIndex = slides.length - 1;
+    }
+    
+    // Добавляем активный класс к новому слайду
+    slides[currentSlideIndex].classList.add('active');
+    indicators[currentSlideIndex].classList.add('active');
+}
+
+// Переход к конкретному слайду
+function currentSlide(slideNumber) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    // Убираем активный класс с текущего слайда
+    slides[currentSlideIndex].classList.remove('active');
+    indicators[currentSlideIndex].classList.remove('active');
+    
+    // Устанавливаем новый индекс (slideNumber начинается с 1)
+    currentSlideIndex = slideNumber - 1;
+    
+    // Добавляем активный класс к новому слайду
+    slides[currentSlideIndex].classList.add('active');
+    indicators[currentSlideIndex].classList.add('active');
 }
 
 // Настройка навигации

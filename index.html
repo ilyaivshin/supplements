@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Карусель -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide active">
+                <img src="images2/5195436979955825285.jpg" alt="Фото 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="images2/5325749603431217014.jpg" alt="Фото 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="images2/5325749603431217015.jpg" alt="Фото 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="images2/5325749603431217016.jpg" alt="Фото 4">
+            </div>
+            <div class="carousel-slide">
+                <img src="images2/5325749603431217017.jpg" alt="Фото 5">
+            </div>
+            <div class="carousel-slide">
+                <img src="images2/5325749603431217018.jpg" alt="Фото 6">
+            </div>
+            <div class="carousel-slide">
+                <img src="images2/photo1.svg" alt="Фото 7">
+            </div>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+        <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+        
+        <!-- Индикаторы -->
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+            <span class="indicator" onclick="currentSlide(4)"></span>
+            <span class="indicator" onclick="currentSlide(5)"></span>
+            <span class="indicator" onclick="currentSlide(6)"></span>
+            <span class="indicator" onclick="currentSlide(7)"></span>
+        </div>
+    </div>
+
     <header>
         <h1>🐾 Кызя и пэзик</h1>
         <p>Бады для животных - здоровье и благополучие ваших питомцев</p>

@@ -1,0 +1,43 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Фон -->
+  <rect width="800" height="400" fill="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"/>
+  
+  <!-- Заголовок -->
+  <text x="400" y="80" text-anchor="middle" fill="white" font-size="48" font-family="Arial, sans-serif" font-weight="bold">
+    Кызя и пэзик
+  </text>
+  
+  <!-- Подзаголовок -->
+  <text x="400" y="120" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="24" font-family="Arial, sans-serif">
+    Лучшие бады для ваших питомцев
+  </text>
+  
+  <!-- Кот -->
+  <circle cx="200" cy="250" r="60" fill="#ff6b6b" stroke="#d63031" stroke-width="3"/>
+  <polygon points="170,220 185,190 200,220" fill="#ff6b6b" stroke="#d63031" stroke-width="2"/>
+  <polygon points="200,220 215,190 230,220" fill="#ff6b6b" stroke="#d63031" stroke-width="2"/>
+  <circle cx="185" cy="240" r="8" fill="#2d3436"/>
+  <circle cx="215" cy="240" r="8" fill="#2d3436"/>
+  <polygon points="200,260 195,255 205,255" fill="#ff4757"/>
+  <path d="M 200 260 Q 190 270 185 265" stroke="#2d3436" stroke-width="2" fill="none"/>
+  <path d="M 200 260 Q 210 270 215 265" stroke="#2d3436" stroke-width="2" fill="none"/>
+  
+  <!-- Собака -->
+  <ellipse cx="600" cy="250" rx="70" ry="60" fill="#fdcb6e" stroke="#e17055" stroke-width="3"/>
+  <ellipse cx="550" cy="220" rx="25" ry="40" fill="#fdcb6e" stroke="#e17055" stroke-width="2"/>
+  <ellipse cx="650" cy="220" rx="25" ry="40" fill="#fdcb6e" stroke="#e17055" stroke-width="2"/>
+  <circle cx="580" cy="240" r="10" fill="#2d3436"/>
+  <circle cx="620" cy="240" r="10" fill="#2d3436"/>
+  <ellipse cx="600" cy="260" rx="8" ry="6" fill="#2d3436"/>
+  <path d="M 580 270 Q 600 280 620 270" stroke="#2d3436" stroke-width="3" fill="none"/>
+  
+  <!-- Декоративные элементы -->
+  <circle cx="100" cy="100" r="20" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="700" cy="100" r="15" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="150" cy="350" r="25" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="650" cy="350" r="18" fill="rgba(255,255,255,0.2)"/>
+  
+  <!-- Сердечки -->
+  <path d="M 300 180 Q 300 170 310 170 Q 320 170 320 180 Q 320 190 310 200 Q 300 190 300 180" fill="rgba(255,255,255,0.6)"/>
+  <path d="M 500 180 Q 500 170 510 170 Q 520 170 520 180 Q 520 190 510 200 Q 500 190 500 180" fill="rgba(255,255,255,0.6)"/>
+</svg>
