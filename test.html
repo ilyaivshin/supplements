@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест карусели</title>
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+        .test-image { width: 200px; height: 150px; margin: 10px; border: 2px solid #ccc; }
+        .test-image img { width: 100%; height: 100%; object-fit: contain; }
+    </style>
+</head>
+<body>
+    <h1>Тест загрузки изображений</h1>
+    <p>Проверяем, загружаются ли все изображения из папки images2:</p>
+    
+    <div class="test-image">
+        <img src="images2/5195436979955825285.jpg" alt="Фото 1">
+        <p>5195436979955825285.jpg</p>
+    </div>
+    
+    <div class="test-image">
+        <img src="images2/5325749603431217014.jpg" alt="Фото 2">
+        <p>5325749603431217014.jpg</p>
+    </div>
+    
+    <div class="test-image">
+        <img src="images2/5325749603431217015.jpg" alt="Фото 3">
+        <p>5325749603431217015.jpg</p>
+    </div>
+    
+    <div class="test-image">
+        <img src="images2/5325749603431217016.jpg" alt="Фото 4">
+        <p>5325749603431217016.jpg</p>
+    </div>
+    
+    <div class="test-image">
+        <img src="images2/5325749603431217017.jpg" alt="Фото 5">
+        <p>5325749603431217017.jpg</p>
+    </div>
+    
+    <div class="test-image">
+        <img src="images2/5325749603431217018.jpg" alt="Фото 6">
+        <p>5325749603431217018.jpg</p>
+    </div>
+    
+    <div class="test-image">
+        <img src="images2/photo1.svg" alt="Фото 7">
+        <p>photo1.svg</p>
+    </div>
+    
+    <script>
+        // Проверяем загрузку изображений
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach((img, index) => {
+                img.onload = function() {
+                    console.log(`Изображение ${index + 1} загружено успешно`);
+                };
+                img.onerror = function() {
+                    console.error(`Ошибка загрузки изображения ${index + 1}:`, img.src);
+                };
+            });
+        });
+    </script>
+</body>
+</html>

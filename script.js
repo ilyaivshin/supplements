@@ -168,14 +168,28 @@ function initializeApp() {
 function initializeCarousel() {
     const slides = document.querySelectorAll('.carousel-slide');
     const indicators = document.querySelectorAll('.indicator');
+    const carousel = document.querySelector('.carousel-container');
+    
+    // Проверяем, что элементы существуют
+    if (slides.length === 0 || !carousel) {
+        console.log('Карусель не найдена');
+        return;
+    }
+    
+    // Устанавливаем первый слайд как активный
+    if (slides.length > 0) {
+        slides[0].classList.add('active');
+    }
+    if (indicators.length > 0) {
+        indicators[0].classList.add('active');
+    }
     
     // Автоматическая прокрутка каждые 4 секунды
     slideInterval = setInterval(() => {
-        changeSlide(1);
+        window.changeSlide(1);
     }, 4000);
     
     // Останавливаем автопрокрутку при наведении
-    const carousel = document.querySelector('.carousel-container');
     carousel.addEventListener('mouseenter', () => {
         clearInterval(slideInterval);
     });
@@ -183,19 +197,23 @@ function initializeCarousel() {
     // Возобновляем автопрокрутку при убирании мыши
     carousel.addEventListener('mouseleave', () => {
         slideInterval = setInterval(() => {
-            changeSlide(1);
+            window.changeSlide(1);
         }, 4000);
     });
 }
 
-// Смена слайда
-function changeSlide(direction) {
+// Смена слайда (делаем глобальной функцией)
+window.changeSlide = function(direction) {
     const slides = document.querySelectorAll('.carousel-slide');
     const indicators = document.querySelectorAll('.indicator');
     
+    if (slides.length === 0) return;
+    
     // Убираем активный класс с текущего слайда
     slides[currentSlideIndex].classList.remove('active');
-    indicators[currentSlideIndex].classList.remove('active');
+    if (indicators[currentSlideIndex]) {
+        indicators[currentSlideIndex].classList.remove('active');
+    }
     
     // Вычисляем новый индекс
     currentSlideIndex += direction;
@@ -209,24 +227,39 @@ function changeSlide(direction) {
     
     // Добавляем активный класс к новому слайду
     slides[currentSlideIndex].classList.add('active');
-    indicators[currentSlideIndex].classList.add('active');
+    if (indicators[currentSlideIndex]) {
+        indicators[currentSlideIndex].classList.add('active');
+    }
 }
 
-// Переход к конкретному слайду
-function currentSlide(slideNumber) {
+// Переход к конкретному слайду (делаем глобальной функцией)
+window.currentSlide = function(slideNumber) {
     const slides = document.querySelectorAll('.carousel-slide');
     const indicators = document.querySelectorAll('.indicator');
     
+    if (slides.length === 0) return;
+    
     // Убираем активный класс с текущего слайда
     slides[currentSlideIndex].classList.remove('active');
-    indicators[currentSlideIndex].classList.remove('active');
+    if (indicators[currentSlideIndex]) {
+        indicators[currentSlideIndex].classList.remove('active');
+    }
     
     // Устанавливаем новый индекс (slideNumber начинается с 1)
     currentSlideIndex = slideNumber - 1;
     
+    // Проверяем границы
+    if (currentSlideIndex >= slides.length) {
+        currentSlideIndex = slides.length - 1;
+    } else if (currentSlideIndex < 0) {
+        currentSlideIndex = 0;
+    }
+    
     // Добавляем активный класс к новому слайду
     slides[currentSlideIndex].classList.add('active');
-    indicators[currentSlideIndex].classList.add('active');
+    if (indicators[currentSlideIndex]) {
+        indicators[currentSlideIndex].classList.add('active');
+    }
 }
 
 // Настройка навигации
