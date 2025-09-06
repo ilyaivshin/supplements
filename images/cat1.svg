@@ -1,0 +1,47 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Голова кота -->
+  <circle cx="100" cy="80" r="50" fill="#ff6b6b" stroke="#d63031" stroke-width="3"/>
+  
+  <!-- Уши -->
+  <polygon points="70,50 85,20 100,50" fill="#ff6b6b" stroke="#d63031" stroke-width="2"/>
+  <polygon points="100,50 115,20 130,50" fill="#ff6b6b" stroke="#d63031" stroke-width="2"/>
+  
+  <!-- Внутренние уши -->
+  <polygon points="75,45 85,30 95,45" fill="#ff8e8e"/>
+  <polygon points="105,45 115,30 125,45" fill="#ff8e8e"/>
+  
+  <!-- Глаза -->
+  <circle cx="85" cy="70" r="8" fill="#2d3436"/>
+  <circle cx="115" cy="70" r="8" fill="#2d3436"/>
+  <circle cx="87" cy="68" r="3" fill="#ffffff"/>
+  <circle cx="117" cy="68" r="3" fill="#ffffff"/>
+  
+  <!-- Нос -->
+  <polygon points="100,85 95,80 105,80" fill="#ff4757"/>
+  
+  <!-- Рот -->
+  <path d="M 100 85 Q 90 95 85 90" stroke="#2d3436" stroke-width="2" fill="none"/>
+  <path d="M 100 85 Q 110 95 115 90" stroke="#2d3436" stroke-width="2" fill="none"/>
+  
+  <!-- Усы -->
+  <line x1="60" y1="75" x2="40" y2="70" stroke="#2d3436" stroke-width="2"/>
+  <line x1="60" y1="80" x2="40" y2="80" stroke="#2d3436" stroke-width="2"/>
+  <line x1="60" y1="85" x2="40" y2="90" stroke="#2d3436" stroke-width="2"/>
+  <line x1="140" y1="75" x2="160" y2="70" stroke="#2d3436" stroke-width="2"/>
+  <line x1="140" y1="80" x2="160" y2="80" stroke="#2d3436" stroke-width="2"/>
+  <line x1="140" y1="85" x2="160" y2="90" stroke="#2d3436" stroke-width="2"/>
+  
+  <!-- Тело -->
+  <ellipse cx="100" cy="150" rx="60" ry="40" fill="#ff6b6b" stroke="#d63031" stroke-width="3"/>
+  
+  <!-- Лапы -->
+  <ellipse cx="70" cy="180" rx="15" ry="20" fill="#ff6b6b" stroke="#d63031" stroke-width="2"/>
+  <ellipse cx="130" cy="180" rx="15" ry="20" fill="#ff6b6b" stroke="#d63031" stroke-width="2"/>
+  
+  <!-- Хвост -->
+  <path d="M 160 150 Q 200 120 190 100 Q 180 80 160 90" stroke="#ff6b6b" stroke-width="8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Забавные брови -->
+  <path d="M 75 55 Q 85 45 95 55" stroke="#2d3436" stroke-width="3" fill="none"/>
+  <path d="M 105 55 Q 115 45 125 55" stroke="#2d3436" stroke-width="3" fill="none"/>
+</svg>

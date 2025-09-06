@@ -1,0 +1,48 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Голова собаки -->
+  <ellipse cx="100" cy="80" rx="55" ry="50" fill="#fdcb6e" stroke="#e17055" stroke-width="3"/>
+  
+  <!-- Уши (висячие) -->
+  <ellipse cx="70" cy="60" rx="20" ry="35" fill="#fdcb6e" stroke="#e17055" stroke-width="2"/>
+  <ellipse cx="130" cy="60" rx="20" ry="35" fill="#fdcb6e" stroke="#e17055" stroke-width="2"/>
+  
+  <!-- Внутренние уши -->
+  <ellipse cx="70" cy="60" rx="12" ry="25" fill="#f8b500"/>
+  <ellipse cx="130" cy="60" rx="12" ry="25" fill="#f8b500"/>
+  
+  <!-- Глаза -->
+  <circle cx="85" cy="70" r="8" fill="#2d3436"/>
+  <circle cx="115" cy="70" r="8" fill="#2d3436"/>
+  <circle cx="87" cy="68" r="3" fill="#ffffff"/>
+  <circle cx="117" cy="68" r="3" fill="#ffffff"/>
+  
+  <!-- Нос -->
+  <ellipse cx="100" cy="85" rx="8" ry="6" fill="#2d3436"/>
+  
+  <!-- Рот -->
+  <path d="M 100 90 Q 90 100 85 95" stroke="#2d3436" stroke-width="2" fill="none"/>
+  <path d="M 100 90 Q 110 100 115 95" stroke="#2d3436" stroke-width="2" fill="none"/>
+  
+  <!-- Язык -->
+  <ellipse cx="100" cy="95" rx="6" ry="8" fill="#ff6b6b"/>
+  
+  <!-- Тело -->
+  <ellipse cx="100" cy="150" rx="70" ry="50" fill="#fdcb6e" stroke="#e17055" stroke-width="3"/>
+  
+  <!-- Лапы -->
+  <ellipse cx="60" cy="190" rx="20" ry="25" fill="#fdcb6e" stroke="#e17055" stroke-width="2"/>
+  <ellipse cx="140" cy="190" rx="20" ry="25" fill="#fdcb6e" stroke="#e17055" stroke-width="2"/>
+  
+  <!-- Хвост (виляющий) -->
+  <path d="M 170 150 Q 200 130 190 100 Q 180 70 160 80" stroke="#fdcb6e" stroke-width="12" fill="none" stroke-linecap="round"/>
+  
+  <!-- Ошейник -->
+  <ellipse cx="100" cy="120" rx="45" ry="8" fill="#e84393" stroke="#d63031" stroke-width="2"/>
+  
+  <!-- Медальон на ошейнике -->
+  <circle cx="100" cy="120" r="5" fill="#f1c40f"/>
+  
+  <!-- Забавные брови -->
+  <path d="M 75 55 Q 85 45 95 55" stroke="#2d3436" stroke-width="3" fill="none"/>
+  <path d="M 105 55 Q 115 45 125 55" stroke="#2d3436" stroke-width="3" fill="none"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Голова кота -->
+  <circle cx="100" cy="80" r="50" fill="#a29bfe" stroke="#6c5ce7" stroke-width="3"/>
+  
+  <!-- Уши -->
+  <polygon points="65,45 80,15 95,45" fill="#a29bfe" stroke="#6c5ce7" stroke-width="2"/>
+  <polygon points="105,45 120,15 135,45" fill="#a29bfe" stroke="#6c5ce7" stroke-width="2"/>
+  
+  <!-- Внутренние уши -->
+  <polygon points="70,40 80,25 90,40" fill="#c7a8ff"/>
+  <polygon points="110,40 120,25 130,40" fill="#c7a8ff"/>
+  
+  <!-- Глаза (закрытые от удовольствия) -->
+  <path d="M 80 70 Q 90 75 100 70" stroke="#2d3436" stroke-width="4" fill="none"/>
+  <path d="M 100 70 Q 110 75 120 70" stroke="#2d3436" stroke-width="4" fill="none"/>
+  
+  <!-- Нос -->
+  <polygon points="100,85 95,80 105,80" fill="#fd79a8"/>
+  
+  <!-- Рот (улыбка) -->
+  <path d="M 90 90 Q 100 100 110 90" stroke="#2d3436" stroke-width="3" fill="none"/>
+  
+  <!-- Усы -->
+  <line x1="55" y1="75" x2="35" y2="70" stroke="#2d3436" stroke-width="2"/>
+  <line x1="55" y1="80" x2="35" y2="80" stroke="#2d3436" stroke-width="2"/>
+  <line x1="55" y1="85" x2="35" y2="90" stroke="#2d3436" stroke-width="2"/>
+  <line x1="145" y1="75" x2="165" y2="70" stroke="#2d3436" stroke-width="2"/>
+  <line x1="145" y1="80" x2="165" y2="80" stroke="#2d3436" stroke-width="2"/>
+  <line x1="145" y1="85" x2="165" y2="90" stroke="#2d3436" stroke-width="2"/>
+  
+  <!-- Тело -->
+  <ellipse cx="100" cy="150" rx="65" ry="45" fill="#a29bfe" stroke="#6c5ce7" stroke-width="3"/>
+  
+  <!-- Лапы -->
+  <ellipse cx="65" cy="185" rx="18" ry="25" fill="#a29bfe" stroke="#6c5ce7" stroke-width="2"/>
+  <ellipse cx="135" cy="185" rx="18" ry="25" fill="#a29bfe" stroke="#6c5ce7" stroke-width="2"/>
+  
+  <!-- Хвост (закрученный) -->
+  <path d="M 165 150 Q 190 130 180 100 Q 170 70 150 80 Q 130 90 140 110" stroke="#a29bfe" stroke-width="10" fill="none" stroke-linecap="round"/>
+  
+  <!-- Сердечки вокруг -->
+  <path d="M 30 50 Q 30 40 40 40 Q 50 40 50 50 Q 50 60 40 70 Q 30 60 30 50" fill="#ff7675"/>
+  <path d="M 150 30 Q 150 20 160 20 Q 170 20 170 30 Q 170 40 160 50 Q 150 40 150 30" fill="#ff7675"/>
+</svg>
